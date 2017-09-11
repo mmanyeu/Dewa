@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home - Dewa Arts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/dewa_full.css">
+<!--  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="index.html">Dewa Arts</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="C:wamp/www/Dewa_Arts/index.html#aboout">ABOUT</a></li>
+            <li><a href="index.html#services">SERVICES</a></li>
+            <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact_us.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="contact_content">
+    <!--<div class="freecontactformmessage">Fields marked with <span class="required_star"> * </span> are mandatory.</div>-->
+
+
+    <!-- Container (Contact Section)-->
+    <div id="contact" class="container-fluid text center">
+    <div class="contact_forms" >
+        <h2>Have questions or comments?Send us a message</h2>
+          <form name="contactform" method="post" action="contact_form_email.php">
+                <table>
+                <tr>
+                <label for="first_name">First Name</label>
+                  <input type="text" name="first_name" maxlength="30">
+                </tr>
+                <tr>
+                  <label for="last_name">Last Name</label>
+                  <input type="text" name="last_name" maxlength="30">
+                </tr>
+                <tr>
+                  <label for="email">Email Address </label>
+                  <input type="text" name="email" maxlength="50">
+                </tr>
+                <tr>
+                  <label for="telephone">Telephone Number</label>
+                  <input type="text" name="telephone" class="tel-number" maxlength="30">
+                </tr>
+                <tr>
+                  <label for="comments">Comments or Message </label>
+                  <textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                </tr>
+                <tr>
+                  <input type="submit" value="Submit">
+                </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+    <footer id="myFooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5>The Basics</h5>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="contact_us.php">Wanna talk to us?</a></li>
+                                <li><a href="about.html">More about Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>Our Copyright &amp; Privacy Policy</h5>
+                            <ul>
+                                <li><a href="terms_of_service.html">Terms of Service</a></li>
+                                <li><a href="copyright.html">Copyright</a></li>
+                                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>Support</h5>
+                            <ul>
+                                <li><a href="FAQ.html">Frequently Asked Questions</a></li>
+                                <li><a href="CSR.html">This is how we give back to the community</a></li>
+                                <li><a href="corporate.html">Working with companie or large organisations</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 info">
+                            <h5>Art Tip of the Day</h5>
+                            <p> Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="second-bar">
+                   <div class="container">
+                        <h2 class="logo"><a href="Dewa%20Icon.png"> LOGO </a></h2>
+                        <div class="social-icons">
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                    </div>
+                </div>-->
+            </footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
