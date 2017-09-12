@@ -1582,8 +1582,17 @@ pre code {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
+  margin-right:auto;
   margin-left: auto;
+}
+.containerb {
+  padding-right: 0.1px;
+  padding-left: 0.1px;
+  padding-top: 49px;
+  padding-bottom: 15px;
+  margin-right:auto;
+  margin-left: auto;
+
 }
 @media (min-width: 768px) {
   .container {
@@ -6236,7 +6245,7 @@ button.close {
 .carousel {
   position: relative;
   background-color: #FFF5F5;
-  width: 1300px;
+  width: 1350px;
   height: 400px;
   overflow: hidden;
 }
@@ -6253,7 +6262,7 @@ button.close {
           transition: .6s ease-in-out left;
 }
 .carousel-inner > .item > img{
-    width: 1260px;
+    width: 1350px;
     height: 400px;
 }
 .carousel-inner > .item > a > img {
@@ -7025,6 +7034,9 @@ button.close {
 #contact{
     background-color: #FFF5F5;
 }
+#contact h2, p{
+    text-align: center;
+}
 .contact_content{
     background-color: #D40B00;
 }
@@ -7160,7 +7172,7 @@ button.close {
 
 /*CSS for the image gallery*/
 #gallery p {
-    text-align: center;
+    text-align:justify;
 }
 img {
   max-width: 100%;
@@ -7259,29 +7271,8 @@ img {
   transition: all 0.35s;
 }
 
-/* CSS used for positioning the footers at the bottom of the page. 
-/* You can remove this
-
-html{
-    height: 100%;
+.navbar-header img{
+    height: 50px;
+    width: 100px;
 }
 
-body{
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    height: 100%;
-}
-
-.content{
-   flex: 1 0 auto;
-   -webkit-flex: 1 0 auto;
-   min-height: 200px;
-}
-
-#myFooter{
-   flex: 0 0 auto;
-   -webkit-flex: 0 0 auto;
-}
-/*# sourceMappingURL=bootstrap.css.map */
